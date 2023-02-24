@@ -5,14 +5,12 @@
 using std::cout;
 using std::endl;
 
-void show_prog(int start, int step, int size) {
-    int i, x;
-    for (i = 0, x = start; i < size; i++, x += step)
-        cout << x << ' ';
-    return 0;
-}
-
 int main()
 {
-    show_prog(0, 5, 10);
+    const short SIZE = 10;
+    int mas[SIZE]{};
+    // Цикл вывода 1-мерного массива
+    for (int i = 0; i < SIZE; i++)
+        cout << mas[i] << ' ';
+    cout << endl;
 }
